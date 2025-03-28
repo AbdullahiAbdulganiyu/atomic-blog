@@ -1,4 +1,4 @@
-import { createContext, useEffect, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 import { faker } from "@faker-js/faker";
 
 function createRandomPost() {
@@ -72,6 +72,8 @@ function App() {
 }
 
 function Header() {
+  const { onClearPosts } = useContext();
+
   return (
     <header>
       <h1>
