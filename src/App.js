@@ -45,6 +45,7 @@ function App() {
   );
 
   return (
+    // PROVIDING VALUE TO CHILD COMPONENT
     <PostContext.Provider
       value={{
         post: searchedPosts,
