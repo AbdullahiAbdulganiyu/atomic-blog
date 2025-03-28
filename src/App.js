@@ -73,6 +73,7 @@ function App() {
 }
 
 function Header() {
+  // CONSUMING THE VALUE
   const { onClearPosts } = useContext();
 
   return (
