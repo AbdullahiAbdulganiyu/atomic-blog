@@ -48,7 +48,7 @@ function App() {
     // PROVIDING VALUE TO CHILD COMPONENT
     <PostContext.Provider
       value={{
-        post: searchedPosts,
+        posts: searchedPosts,
         onAddPost: handleAddPost,
         onClearPosts: handleClearPosts,
         searchQuery,
