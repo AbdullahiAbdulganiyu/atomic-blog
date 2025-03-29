@@ -90,7 +90,10 @@ function Header() {
   );
 }
 
-function SearchPosts({ searchQuery, setSearchQuery }) {
+function SearchPosts() {
+  // CONSUMING THE VALUE
+  const { searchQuery, setSearchQuery } = useContext();
+
   return (
     <input
       value={searchQuery}
@@ -100,7 +103,10 @@ function SearchPosts({ searchQuery, setSearchQuery }) {
   );
 }
 
-function Results({ posts }) {
+function Results() {
+  // CONSUMING THE VALUE
+  const { posts } = useContext();
+
   return <p>🚀 {posts.length} atomic posts found</p>;
 }
 
