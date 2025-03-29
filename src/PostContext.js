@@ -35,14 +35,15 @@ function PostProvider() {
     setPosts([]);
   }
 
-  return; // PROVIDING VALUE TO CHILD COMPONENT
-  <PostContext.Provider
-    value={{
-      posts: searchedPosts,
-      onAddPost: handleAddPost,
-      onClearPosts: handleClearPosts,
-      searchQuery,
-      setSearchQuery,
-    }}
-  ></PostContext.Provider>;
+  return (
+    <PostContext.Provider
+      value={{
+        posts: searchedPosts,
+        onAddPost: handleAddPost,
+        onClearPosts: handleClearPosts,
+        searchQuery,
+        setSearchQuery,
+      }}
+    ></PostContext.Provider>
+  );
 }
